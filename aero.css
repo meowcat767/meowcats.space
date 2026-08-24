@@ -1,0 +1,42 @@
+/* CSS Document */
+
+/* Glossy Dark Aero Navbar Base */
+.navbar {
+  background: linear-gradient(180deg, 
+    #4c5259 0%, 
+    #262a2e 49%, 
+    #08090a 50%, 
+    #1b1e21 100%) !important;
+  border-top: 1px solid #7c848c;
+  border-bottom: 1px solid #000000;
+  border-radius: 4px;
+  padding: 2px 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Nav Item Links */
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 16px !important;
+  text-shadow: 0px 1px 2px #000000;
+}
+
+/* Hover Effect Gloss Light-up */
+.navbar-nav .nav-link:hover {
+  background: linear-gradient(180deg, 
+    rgba(255,255,255,0.3) 0%, 
+    rgba(255,255,255,0.05) 50%, 
+    rgba(255,255,255,0.15) 100%);
+  border-radius: 3px;
+}
+
+body {
+	background-image: url("img/perfect_hue_24.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
