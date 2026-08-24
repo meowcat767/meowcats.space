@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Me - Windows Vista</title>
+    <!-- Bootstrap & Custom CSS -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link href="aero.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- Outer Master Glass Container -->
+    <div class="container masterContainer">
+      
+      <!-- Metallic Header Navigation Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark mb-3">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#vistaNavbar" aria-controls="vistaNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="vistaNavbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home&nbsp;</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://git.meowcat.site">Git</a></li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About Me
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                <a class="dropdown-item" href="about.html">Overview</a>
+                <a class="dropdown-item" href="#">Projects</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Portfolio</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Main Page Layout: 3-Column Grid -->
+      <div class="row">
+        
+        <!-- Left Sidebar (3 Columns) -->
+        <aside class="col-md-3 left-sidebar">
+          <h2 class="vista-title" style="font-size: 18px;">Navigation</h2>
+          <ul class="vista-list">
+            <li><a href="https://git.meowcat.site">Git Server</a></li>
+			 <li><a href="https://github.com/meowcat767">GitHub</a></li>
+			  <li><a href="https://gallery.meowcats.space">Gallery</a></li>
+          </ul>
+
+    
+
+
+        </aside>
+
+        <!-- Center Main Content Area (6 Columns) -->
+        <main class="col-md-6 center-content">
+          <h2 class="vista-title" id="bio">about me&nbsp;</h2>
+
+          <!-- Profile Card -->
+          <div class="hero-card mb-3">
+            <div class="row align-items-center">
+              <div class="col-sm-4 text-center mb-2 mb-sm-0">
+                <img src="img/meowcat_avatar.png" alt="meowcat avatar" class="img-fluid rounded border" style="max-height: 100px;">
+              </div>
+              <div class="col-sm-8">
+                <h5 class="mb-1 text-primary font-weight-bold">meowcat</h5>
+                <p class="small text-muted mb-1">Developer & Retro Web Enthusiast</p>
+                <p class="small mb-0">Welcome to my personal page! I enjoy building web projects, pointless game/applications and Frutiger Aero!&nbsp; &nbsp;</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tabbed Info Area -->
+          <div class="tab-card p-0 overflow-hidden mb-3">
+            <ul class="nav nav-tabs vista-tabs" id="aboutTabs" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="tech-tab" data-toggle="tab" href="#tech" role="tab">Tech Stack</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="setup-tab" data-toggle="tab" href="#setup" role="tab">Uninteresting</a>
+              </li>
+            </ul>
+            <div class="tab-content tab-content-area" id="aboutTabsContent">
+              
+              <!-- Tab 1: Tech Stack -->
+              <div class="tab-pane fade show active" id="tech" role="tabpanel">
+                <h6 class="text-primary font-weight-bold" id="skills">Development Skills</h6>
+                <ul class="vista-list">
+                  <li>HTML5 / Custom CSS / Bootstrap 4</li>
+                  <li>Java (Spring Boot also applies)&nbsp;</li>
+                  <li>C++&nbsp;</li>
+                  <li>Maya, Blender and Pixar's RenderMan</li>
+                  <li>PHP&nbsp;</li>
+                </ul>
+              </div>
+
+              <!-- Tab 2: Server Setup -->
+              <div class="tab-pane fade" id="setup" role="tabpanel">
+                <h6 class="text-primary font-weight-bold">Other boring things</h6>
+                <ul class="vista-list">
+                  <li>can kind of use FL Studio</li>
+                  <li>kinda good at Valve Hammer(++)</li>
+                  <li>cannot dance</li>
+				  <li>secretly hates adobe so i avoid them at any cost i can</li>
+				  <li>^ please ignore him as this website is made in Dreamweaver</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </main>
+
+        <!-- Right Sidebar (3 Columns) -->
+        <aside class="col-md-3 right-sidebar">
+          <div class="certified-box mb-3">
+			  <a href="https://nonbot.org/pledged/view/a2946cca-a391-41b3-926c-5d5ef7dea6d5" target="_blank">
+	<img style="height:128px;margin-top:10px;margin-bottom:10px;" src="https://nonbot.org/images/nonbot_pledged_logo.svg" alt="Human-made Content">
+</a>
+			</div>
+        </aside>
+
+      </div>
+    </div>
+
+    <!-- JavaScript Dependencies -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>
