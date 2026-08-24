@@ -1,10 +1,94 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
-</head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects</title>
+    <!-- Bootstrap & Custom CSS -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link href="aero.css" rel="stylesheet">
+  </head>
+  <body>
 
-<body>
-</body>
+    <!-- Outer Master Glass Container -->
+    <div class="container masterContainer">
+      
+      <!-- Metallic Header Navigation Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark mb-3">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#vistaNavbar" aria-controls="vistaNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="vistaNavbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Windows Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://git.meowcat.site">Git</a></li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About Me
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                <a class="dropdown-item" href="about.html">Overview</a>
+                <a class="dropdown-item active" href="projects.html">Projects</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Portfolio</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Main Page Layout: 3-Column Grid -->
+      <div class="row">
+        
+        <!-- Left Sidebar (3 Columns) -->
+        <aside class="col-md-3 left-sidebar">
+          <h2 class="vista-title" style="font-size: 18px;">Useful links</h2>
+          <ul class="vista-list">
+            <li><a href="https://git.meowcats.space">View All on Git</a></li>
+          </ul>
+
+
+        </aside>
+
+        <!-- Center Main Content Area (6 Columns) -->
+        <main class="col-md-6 center-content">
+          <h2 class="vista-title">Software Explorer</h2>
+
+          <!-- Project Card 1: Aero Site -->
+          <div class="hero-card mb-3" id="web">
+            <h5 class="mb-1 text-primary font-weight-bold">OrbitPi&nbsp;</h5>
+            <p class="small text-muted mb-2">Games | Java&nbsp;</p>
+            <p class="small mb-2">Ultimate ragebait game&nbsp;</p>
+            <a href="https://meowcat767.itch.io/orbitpi" class="btn btn-aero btn-sm">View on itch.io &rarr;</a>
+          </div>
+
+          <!-- Project Card 2: Self-Hosted Gallery -->
+          <div class="hero-card mb-3" id="server">
+            <h5 class="mb-1 text-primary font-weight-bold">AeroNet&nbsp;</h5>
+            <p class="small text-muted mb-2">Web | Protocols | Service | Java&nbsp;</p>
+            <p class="small mb-2">Imagine a web, but we never left 2007.&nbsp;</p>
+            <a href="" class="btn btn-aero btn-sm">COMING SOON!&nbsp;</a>
+          </div>
+
+
+   
+        </main>
+
+        <!-- Right Sidebar (3 Columns) -->
+        <aside class="col-md-3 right-sidebar">
+          <div class="certified-box mb-3">
+			  	<a href="https://frutigeraeroarchive.org/"><img src="https://frutigeraeroarchive.org/images/ads/fa_archive_180x180.png" alt="Frutiger Aero Archive"></a>
+          </div>
+        </aside>
+		
+      </div>
+    </div>
+
+    <!-- JavaScript Dependencies -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
 </html>
