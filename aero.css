@@ -1,52 +1,197 @@
-/* CSS Document */
+
+body {
+  background: #689cb2 url("img/perfect_hue_24.jpg") no-repeat center top fixed;
+  background-size: 100% auto;
+  font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+}
+
+
+.masterContainer {
+  width: 960px;
+  max-width: 960px;
+  margin: 10px auto;
+  border: 1px solid #4f7385;
+  border-radius: 6px;
+  padding: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+
+  
+  background-color: #ffffff;
+  background-image: radial-gradient(
+    ellipse 120% 70% at 20% 0%, 
+    #b2d7e8 0%, 
+    #dbebf3 45%, 
+    #ffffff 80%
+  );
+  background-repeat: no-repeat;
+}
+
+
+.vista-top-header {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 8px;
+}
+
+.vista-top-links {
+  font-size: 11px;
+  color: #ffffff;
+  text-shadow: 0px 1px 2px rgba(0,0,0,0.6);
+  margin-bottom: 6px;
+}
+
+.vista-top-links a {
+  color: #ffffff;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.search-box input {
+  border: 1px solid #7f9db9;
+  padding: 2px 4px;
+  font-size: 12px;
+  width: 200px;
+}
+
+.search-box button {
+  background: linear-gradient(180deg, #ffffff 0%, #dbeeff 100%);
+  border: 1px solid #6b9cc2;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 1px 8px;
+  cursor: pointer;
+}
 
 
 .navbar {
   background: linear-gradient(180deg, 
-    #4c5259 0%, 
-    #262a2e 49%, 
-    #08090a 50%, 
-    #1b1e21 100%) !important;
-  border-top: 1px solid #7c848c;
-  border-bottom: 1px solid #000000;
-  border-radius: 4px;
-  padding: 2px 15px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    #535a60 0%, 
+    #202428 49%, 
+    #0d0f11 50%, 
+    #2b3035 100%) !important;
+  border: 1px solid #111111;
+  border-radius: 3px;
+  padding: 0 !important;
+  min-height: 30px;
 }
 
-/* Nav Item Links */
+.navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar-nav .nav-item {
+  border-right: 1px solid #444d54;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.navbar-nav .nav-item:last-child {
+  border-right: none;
+}
+
 .navbar-nav .nav-link {
   color: #ffffff !important;
-  font-family: 'Segoe UI', Tahoma, sans-serif;
-  font-size: 13px;
-  font-weight: 600;
-  padding: 8px 16px !important;
-  text-shadow: 0px 1px 2px #000000;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 6px 10px !important;
+  text-shadow: 0px 1px 2px #000;
 }
 
-/* Hover Effect Gloss Light-up */
 .navbar-nav .nav-link:hover {
-  background: linear-gradient(180deg, 
-    rgba(255,255,255,0.3) 0%, 
-    rgba(255,255,255,0.05) 50%, 
-    rgba(255,255,255,0.15) 100%);
-  border-radius: 3px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.05) 100%);
 }
 
-body {
-	background-image: url("img/perfect_hue_24.jpg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+
+.sub-nav-bar {
+  background: linear-gradient(180deg, #e4ecf2 0%, #d0ded8 100%);
+  border: 1px solid #b2c4d0;
+  height: 22px;
+  margin-bottom: 15px;
 }
 
-.main-content-card {
-	background: rgba(255, 255, 255, 0.82);
-	backdrop-filter: blur(8px); /* blurs bg behind it */
-	border: 1px solid rgba(255, 255, 0.6);
-	box-shadow: 0px 10px 25px rgba(0, 30, 60, 0.3);
-	padding: 20px;
-	margin-top: 15px;
+
+h2.vista-title {
+  color: #335577;
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: 15px;
 }
 
+.left-sidebar h6, .right-sidebar h6 {
+  color: #003366;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 6px;
+}
+
+.vista-list {
+  list-style-type: square;
+  padding-left: 16px;
+  margin-bottom: 15px;
+}
+
+.vista-list li {
+  margin-bottom: 3px;
+  color: #6688aa;
+}
+
+.vista-list a, .left-sidebar a, .right-sidebar a {
+  color: #0055aa;
+  font-size: 11px;
+  text-decoration: none;
+}
+
+.vista-list a:hover, .left-sidebar a:hover, .right-sidebar a:hover {
+  text-decoration: underline;
+}
+
+
+.hero-card {
+  background-color: #f2f7fb;
+  border: 1px solid #d0dfeb;
+  padding: 12px;
+  margin-bottom: 15px;
+}
+
+.certified-box {
+  background-color: #eef5fa;
+  border: 1px solid #d0dfeb;
+  padding: 10px;
+}
+
+/* --- Tab Strip (Classic Mid-2000s Flat Tabs) --- */
+.vista-tabs {
+  background: #e4edf4;
+  border-bottom: 1px solid #c2d5e3;
+}
+
+.vista-tabs .nav-link {
+  font-size: 11px;
+  font-weight: bold;
+  color: #004488;
+  border: 1px solid transparent;
+  padding: 6px 16px;
+  border-radius: 0;
+}
+
+.vista-tabs .nav-link.active {
+  background: #ffffff;
+  border: 1px solid #c2d5e3;
+  border-bottom-color: #ffffff;
+  color: #001133;
+}
+
+.tab-content-area {
+  background: #ffffff;
+  border: 1px solid #c2d5e3;
+  border-top: none;
+  padding: 12px;
+}
