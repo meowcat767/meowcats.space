@@ -2,47 +2,145 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Untitled Document</title>
-    <!-- Bootstrap -->
-	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
-	 <link href="aero.css" rel="stylesheet">
-	
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <script src="https://u.widget.st/ar.js"></script>
+    <title>meowcats.space</title>
+    <!-- Bootstrap & Custom CSS -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link href="aero.css" rel="stylesheet">
   </head>
-  <body class="mainContainer">
-  	<!-- body code goes here -->
+  <body>
 
+    <!-- Outer Vista Glass Window Frame -->
+    <div class="container masterContainer">
+      
+      <!-- Top Header: Logo, Search Bar & Utility Links -->
+      <header class="vista-top-header">
+        <div class="logo-area">
+          <h1>meowcat767</h1>
+        </div>
+        <div class="search-and-links text-right">
+          <div class="vista-top-links mb-1">
+		    <ws-widget type="status" iid="7729" width=50px></ws-widget>
+          </div>
+        </div>
+      </header>
 
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery-3.4.1.min.js"></script>
+      <!-- Glossy Navigation Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#vistaNavbar" aria-controls="vistaNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-  <div class="container"></div>
-<nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="#">&nbsp;</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-	  <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-	    <ul class="navbar-nav mr-auto">
-	      <li class="nav-item active"> <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> </li>
-	      <li class="nav-item"> <a class="nav-link" href="https://git.meowcat.site">Git</a> </li>
-	      <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> About Me&nbsp; </a>
-	        <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">me!!1!</a>
-	          <div class="dropdown-divider"></div>
-	          <a class="dropdown-item" href="#">Portfolio</a> </div>
-          </li>
-        </ul>
-	    <form class="form-inline my-2 my-lg-0">
-</form>
+        <div class="collapse navbar-collapse" id="vistaNavbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active"><a class="nav-link" href="#">Home&nbsp;</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Downloads</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://git.meowcat.site">Git</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About Me
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                <a class="dropdown-item" href="#">Overview</a>
+                <a class="dropdown-item" href="#">Projects</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Portfolio</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Main Page Layout: 3-Column Grid -->
+      <div class="row">
+        
+        <!-- Left Sidebar (3 Columns) -->
+        <aside class="col-md-3 left-sidebar">
+			
+          <h5>&nbsp;onsite</h5>
+          <ul class="vista-list">
+            <li><a href="#">microblog&nbsp;</a></li>
+            <li><a href="#">webrings&nbsp;</a></li>
+            <li><a href="#">software&nbsp;</a></li>
+          </ul>
+
+          <div class="mb-3">
+
+            <h6 class="font-weight-bold text-primary mb-1">Upgrade Now</h6>
+            <p class="small mb-0"><a href="#">Upgrade any software produced by me</a></p>
+            <p class="small mb-0">&nbsp;</p>
+          </div>
+
+          <div class="mb-3">
+            <h6 class="font-weight-bold text-primary mb-1">Gallery&nbsp;</h6>
+            <p class="small mb-0"><a href="#">Fid Fruitger Aero images, created by me and free to use by everyone, for anything&nbsp; &nbsp;</a></p>
+          </div>
+
+          <div>
+            <h6 class="font-weight-bold text-primary mb-1">Featured Downloads</h6>
+            <ul class="vista-list">
+              <li><a href="#">OrbitPi&nbsp;</a></li>
+              <li><a href="#">AeroNet (COMING SOON!)&nbsp;&nbsp;</a></li>
+            </ul>
+          </div>
+        </aside>
+
+        <!-- Center Main Content Area (6 Columns) -->
+        <main class="col-md-6 center-content">
+          <!-- Banner Hero Card -->
+          <div class="hero-card">
+            <img src="img/vista_banner.jpg" class="img-fluid rounded mb-2" alt="Service Pack 1">
+            <h5 class="mb-1">nothing right now....&nbsp;</h5>
+            <p class="small text-muted mb-2">Come back later!&nbsp;</p>
+            <a href="#" class="btn btn-aero btn-sm">Find out how to get it &rarr;</a>
+          </div>
+
+          <!-- Tabbed Media Box -->
+          <div class="tab-card p-0 overflow-hidden">
+            <ul class="nav nav-tabs vista-tabs" id="mediaTabs" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="music-tab" data-toggle="tab" href="#music" role="tab">Enjoy music</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="tv-tab" data-toggle="tab" href="#tv" role="tab">Watch TV & movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="games-tab" data-toggle="tab" href="#games" role="tab">Play games</a>
+              </li>
+            </ul>
+            <div class="tab-content p-3" id="mediaTabsContent">
+              <div class="tab-pane fade show active" id="music" role="tabpanel">
+                <h6 class="text-primary font-weight-bold">Surround yourself with your favorite music</h6>
+                <p class="small mb-0">You have a great music collection. Find out how you can use your PC to enjoy your music even more.</p>
+              </div>
+              <div class="tab-pane fade" id="tv" role="tabpanel">
+                <h6 class="text-primary font-weight-bold">Watch high-definition videos</h6>
+                <p class="small mb-0">Experience movies and TV shows directly on your monitor or connected screen.</p>
+              </div>
+              <div class="tab-pane fade" id="games" role="tabpanel">
+                <h6 class="text-primary font-weight-bold">Next-generation graphics</h6>
+                <p class="small mb-0">Discover immersive gameplay experiences built for Windows Vista.</p>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <!-- Right Sidebar (3 Columns) -->
+        <aside class="col-md-3 right-sidebar">
+          <div class="certified-box">
+			  <ws-widget type="adbank" iid="7728" embed="iframe"></ws-widget>
+			</div>
+        </aside>
+
       </div>
-  </nav>
-	<div class="main-content-card">
-	  <div class="row">
-	    <div class="col-lg-4">Content goes here</div>
-	    <div class="col-lg-4">Content goes here</div>
-	    <div class="col-lg-4">Content goes here</div>
-      </div>
-  </div>
-<script src="js/popper.min.js"></script>
-  <script src="js/bootstrap-4.4.1.js"></script>
-</body>
+    </div>
+
+    <!-- JavaScript Dependencies -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
 </html>
