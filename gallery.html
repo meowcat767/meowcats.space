@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Frutiger Aero Gallery | meowcats.space</title>
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link href="aero.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@3.0.0/css/lightgallery.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@3.0.0/css/lg-thumbnail.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@3.0.0/css/lg-zoom.css">
+  </head>
+  <body>
+    <div class="container masterContainer">
+      <nav class="navbar navbar-expand-lg navbar-dark mb-3">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#vistaNavbar" aria-controls="vistaNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="vistaNavbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home&nbsp;</a></li>
+            <li class="nav-item active"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="projects.html">Projects&nbsp;</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://github.com/meowcat767">Git</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <main class="aero-gallery">
+        <h2 class="vista-title">Frutiger Aero Gallery</h2>
+        <p class="small text-muted">A collection of bright skies, glass, and water. Select an image to explore it.</p>
+        <div class="aero-gallery-grid" id="lightgallery">
+          <a class="aero-gallery-item" href="img/perfect_hue_24.jpg" data-lg-size="3840-2160" data-thumb="img/perfect_hue_24-thumb.jpg" title="Frutiger Aero">
+            <img src="img/perfect_hue_24-thumb.jpg" alt="TEST">
+            <span>TEST IMAGE</span>
+          </a>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@3.0.0/lightgallery.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@3.0.0/plugins/zoom/lg-zoom.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@3.0.0/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+    <script>
+      lightGallery(document.getElementById('lightgallery'), {
+        plugins: [lgZoom, lgThumbnail],
+        licenseKey: '0000-0000-000-0000'
+      });
+    </script>
+  </body>
+</html>
